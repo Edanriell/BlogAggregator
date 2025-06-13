@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bootdotdev/gator/internal/database"
+	"github.com/edanriell/BlogAggregator/internal/database"
 	"github.com/google/uuid"
 )
 
@@ -85,4 +85,3 @@ func scrapeFeed(db *database.Queries, feed database.Feed) {
 	}
 	log.Printf("Feed %s collected, %v posts found", feed.Name, len(feedData.Channel.Item))
 }
-

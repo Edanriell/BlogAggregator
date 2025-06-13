@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/bootdotdev/gator/internal/config"
-	"github.com/bootdotdev/gator/internal/database"
+	"github.com/edanriell/BlogAggregator/internal/config"
+	"github.com/edanriell/BlogAggregator/internal/database"
 
 	_ "github.com/lib/pq"
 )
@@ -75,4 +75,3 @@ func middlewareLoggedIn(handler func(s *state, cmd command, user database.User) 
 		return handler(s, cmd, user)
 	}
 }
-

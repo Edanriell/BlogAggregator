@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/bootdotdev/gator/internal/database"
+	"github.com/edanriell/BlogAggregator/internal/database"
 	"github.com/google/uuid"
 )
 
@@ -80,4 +80,3 @@ func printFeedFollow(username, feedname string) {
 	fmt.Printf("* User:          %s\n", username)
 	fmt.Printf("* Feed:          %s\n", feedname)
 }
-

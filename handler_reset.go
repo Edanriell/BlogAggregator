@@ -13,4 +13,3 @@ func handlerReset(s *state, cmd command) error {
 	fmt.Println("Database reset successfully!")
 	return nil
 }
-

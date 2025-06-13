@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/bootdotdev/gator/internal/database"
+	"github.com/edanriell/BlogAggregator/internal/database"
 )
 
 func handlerBrowse(s *state, cmd command, user database.User) error {
@@ -37,4 +37,3 @@ func handlerBrowse(s *state, cmd command, user database.User) error {
 
 	return nil
 }
-

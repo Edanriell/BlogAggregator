@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/bootdotdev/gator/internal/database"
+	"github.com/edanriell/BlogAggregator/internal/database"
 	"github.com/google/uuid"
 )
 
@@ -82,4 +82,3 @@ func printFeed(feed database.Feed, user database.User) {
 	fmt.Printf("* User:          %s\n", user.Name)
 	fmt.Printf("* LastFetchedAt: %v\n", feed.LastFetchedAt.Time)
 }
-
